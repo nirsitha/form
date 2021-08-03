@@ -1,0 +1,51 @@
+<html>
+    <head><title>Form creation</title></head>
+    <style>
+        form{
+            background-color: darkgray;
+            border: 3px solid rgb(10, 10, 10);
+            padding: 50px 20px 20px 20px;
+        }
+    </style>
+    <body >
+        <form action="form.php">
+            First Name <br>  <input type="text" name="f" placeholder="Your first name" required/> <br>
+            Last Name  <br>  <input type="text" name="l" placeholder="Your last name" required/> <br>
+            Gender <br>  <input type="radio" name="g" required/> Male
+            <input type="radio" name="g" required/> Female
+            <input type="radio" name="g" required/> Others
+            <br>
+            DOB <br> <input type="date" > <br>
+            Languages interest <br> <input type="checkbox" name="k"/> C
+            <input type="checkbox" name="k"/> C++
+            <input type="checkbox" name="k"/> Java
+            <input type="checkbox" name="k"/> Python
+            <input type="checkbox" name="k"/> Html <br>
+            Email <br>  <input type="email" name="e" placeholder="Your email address" required/> <br>
+            Password <br> <input type="password" name="p" required/> <br>
+            Address <br>  <textarea name="a" id="a" cols="50" rows="5"  placeholder="Your postal address"></textarea> <br>
+            City <br>  <input type="text" name="c" placeholder="City" required/> <br>
+            Zip Code <br>  <input type="text" name="z" placeholder="641-651" pattern= "[0-9]{6}" maxlength="6" required/> <br>
+            Phone Number <br> <input type="tel" name="p" placeholder="Enter 10 digit number" pattern="[0-9]{10}"maxlength="10" required/> <br>
+            State <br> <select name="s" id="s">
+                <option value="Ta">TamilNadu</option>
+                <option value="Ka">Karnataka</option>
+                <option value="ke">Kerala</option>
+                <option value="Gu">Gujarat</option>
+                <option value="As">Assam</option>
+            </select> <br>
+            Country <br> <select name="c" id="c">
+                <option value="">India</option>
+                <option value="">Australia</option>
+                <option value="">America</option>
+                <option value="">Japan</option>
+                <option value="">China</option>
+            </select> <br> <br> <br>
+            <input type="checkbox" name="c" required/> I have read and agree to the waiver <br>
+            <input type="checkbox" name="ce" required/> I have read and accept the <a href="./terms.html">Terms of Service </a> and <a href="./privacy.html">Privacy Policy</a> <br>
+            <input type="submit" name="s">
+
+
+        </form>
+    </body>
+</html>
